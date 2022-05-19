@@ -1,0 +1,39 @@
+# Site settings
+title: Foresail-1
+description: "Foresail-1"
+url: "https://foresail.github.io"
+
+
+# Secondary Parameters
+baseurl: ""
+#header-img: img/home-bg.jpg
+header-img: img/Foresail-1_satellite_Aalto_University_lab_1-3-2022_photo_Mikko_Raskinen_007.jpg
+headercolor: "#FFFFFF"
+logo: /img/logos/Foresail_logo.png
+
+# Tertiary Parameters
+github_username: foresail
+twitter_username: aaltosatellites
+facebook_username: AaltoSatellites
+instagram_username: aaltosatellites
+#project_repository: project-pages
+disqus_shortname: project-pages
+
+# Build settings
+#gems: [jekyll-paginate]
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+#paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+# Jekyll Settings
+
+defaults:
+  -
+    scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project"
+      header-img: "img/Foresail-1_satellite_Aalto_University_lab_1-3-2022_photo_Mikko_Raskinen_007.jpg"
