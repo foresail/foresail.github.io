@@ -1,8 +1,99 @@
 ---
 layout: page
-description: ""
+description: "Aalto University"
 ---
 
 <br/>
 
-TBD
+<p> <img src="img/FS1_opened.PNG" alt="FS Exploded" style="float:right;width:auto;height:600px;">
+The Foresail-1 3U Cubesat, is a Finnish satellite mission developed by Aalto University in association with the FORESAIL consortium.
+The mission involves both space science and radio amateur prospects, with scientific payloads such as the Particle Telescope (PATE) and
+Plasma Brake Experiment (PB). <br/> <br/>
+
+Foresail-1 also has an additional camera and magnetometer payload used to monitor spacecraft operations and
+characterize the magnetic field environment in orbit. <br/> <br/>
+
+It was launched to orbit in May of 2022 on-board the Space-X Transporter 5 mission from Cape Canaveral, Florida.
+<p/>
+
+<h2>The Foresail-1 Mission</h2>
+
+<ul>
+	<li><b>Particle Telescope (PATE):</b>
+    <p>
+    PATE was developed at the University of Turku, with a goal to further help us understand the radiation environment of space, and what
+    satellites must endure throughout their mission lifetime. In addition to its scientific value, PATE could also provide a pathway to
+    designing more radiation resistant satellite platforms in the future.<br/> <br/>
+
+    More accurate measurements from the PATE instrument will help us determine exactly how electrons exit and enter the radiation zones
+    into the atmosphere.
+    <p/>
+
+  <li><b>Plasma Brake (PB):</b>
+    <p>
+    The Plasma Brake payload is a technical experiment aimed to be utilized for satellite deorbiting at the end of the satellites life.
+    It functions by extending a thin tether, which is brought to a high voltage. This voltage interacts with the surrounding plasma
+    environment of the ionosphere to produce a torqure, which can be used to influence the orbit of the spacecraft. <br/> <br/>
+
+    The plasma brake has a mass of around 600 g and carries on-board approximately 60 m of the aluminum tether, which will be used for the
+    experiment. The tether itself is comprised of 4 thin wires, with a cross sectional diameter of only 50 micrometers. <br/> <br/>
+
+    The goal of the plasma brake experiment is to provide a viable and cost-effective solution for spacecraft deorbiting in lower orbits.
+    This issue is especially important considering the evergrowing space debris problem around our atmosphere.
+    <p/>
+
+	<li><b>Magnetometer (MATTI):</b>
+    <p>
+    MATTI is a COTS-based magnetometer designed to aid in the operation of PATE. In addition, to its role in providing pitch angle
+    information to PATE, MATTI will also test the limits of COTS-based component and their system resolutions. <br/> <br/>
+
+    The payload has been designed in-house at Aalto University, complete with propretary hardware and firmware.
+    <p/>
+</ul>
+
+<h2>For Radio Amateurs: Receiving Foresail-1</h2>
+
+<p>
+For radio amateurs the mission demonstrates a new Skylink framing protocol for easy and reliable satellite communication.
+Radio amateurs can work with satellite using a repeater virtual channel in the Skylink protocol. <br/> <br/>
+
+Inside these frames Foresail-1 utilizes a procotol called <b>Skylink</b>. The Skylink protocol implements the following specifications
+<p/>
+
+<b>Briefly:</b>
+<ul>
+	<li>Callsign: OH2F1S
+	<li>Center Frequency: 437.125 MHz
+	<li>Bandwidth: 20 kHz
+	<li>Modulation: GMSK
+	<li>Satellite TX power: 1.3 Watts
+	<li>Symbol Rate: 9600 or 19200 sps
+	<li>Polarization: Circular polarization
+	<li>Framing: ASM (0x1ACFFC1D) + Golay24 + RS (255,223)  (mode 5 compatible)
+</ul>
+<i>More details can be found from the SGICD document.</i>
+
+
+<h3>Tracking</h3>
+
+The satellite location be calculated using a <a href="https://celestrak.com/NORAD/elements/supplemental/">pre-computed TLE entry by
+CelesTrack</a>:
+
+<pre><code>FORESAIL-1
+1 70318C 22057T   22145.81271655  .00094955  00000-0  53927-2 0    07
+2 70318  97.4996 258.8499 0012316 246.7014 128.9715 15.12909092    19
+</code></pre>
+
+
+<h3>Additional Documentation</h3>
+<ul>
+	<li><a href="/docs/FS1_Space_Ground_Interface_Control_Sheet.pdf">FS1 Space Ground Interface Control Document (SGICD)</a>
+	<li><a href="/docs/FS1_Skylink_protocol_Specification.pdf">FS1 Skylink Protocol Specification</a>
+</ul>
+
+
+<h2>Contact</h2> <img src="img/logos/Foresail_logo.png" alt="FS Logo" style="float:right;width:150;height:150px;">
+<p>
+<b>Responsible Leader:</b> Professor Jaan Praks (jaan.praks@aalto.fi) <br/>
+<b>Chief Engineer:</b> Petri Niemelä (petri.niemela@aalto.fi) <br/>
+<p/>
